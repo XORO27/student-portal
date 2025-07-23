@@ -1,0 +1,200 @@
+/* 🌟 Base Styling */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #d1eaf5, #f8f9fa);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* 🔷 Header Banner */
+.header-banner {
+  background-color: #4a90e2;
+  color: #ffffff;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* 📦 Center Wrapper for Login */
+.center-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  height: calc(100vh - 80px);
+}
+
+/* 📦 Login Box */
+.login-box {
+  width: 400px;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.login-box h2 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.login-box label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #34495e;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+}
+
+/* 🎯 Button Group */
+.button-group {
+  margin-top: 25px;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+button[type="submit"]:hover {
+  background-color: #219150;
+}
+
+.btn-secondary {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #5dade2;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #3498db;
+}
+
+/* 🧾 Form Container */
+.form-container {
+  width: 450px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* 📝 Headings */
+h2 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+/* 🔖 Labels and Inputs */
+form {
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-top: 18px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #34495e;
+}
+
+/* 🔵 Text, Email, Dropdown, Date */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  background-color: #f4f8fb;
+  font-size: 14px;
+  color: #333;
+  transition: border-color 0.2s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+/* 📄 File Upload */
+input[type="file"] {
+  margin-top: 8px;
+  background-color: #eef2f7;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+/* 📍 Textarea */
+textarea {
+  resize: vertical;
+}
+
+/* ✅ Form Submit Button */
+.form-container button[type="submit"] {
+  margin-top: 25px;
+  width: 100%;
+  padding: 12px;
+  background-color: #27ae60;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.form-container button[type="submit"]:hover {
+  background-color: #219150;
+}
+
+/* 🖼️ Responsive Enhancements */
+@media (max-width: 500px) {
+  .form-container,
+  .login-box {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .header-banner {
+    font-size: 20px;
+  }
+}
